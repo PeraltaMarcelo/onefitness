@@ -1,0 +1,81 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "vicecity", sans-serif;
+  box-sizing: border-box;
+}
+
+.navbar-brand img {
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px black;
+}
+
+#menu a {
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+  border: 2px solid red;
+}
+
+.row {
+  margin-top: 50px;
+}
+
+.row h2 {
+  color: white;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.row h3 {
+  line-height: 2;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.formulario {
+  width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 4px;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.formulario__contenedor h1 {
+  margin-bottom: 20px;
+}
+
+.formulario__input {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: "calibri";
+  font-size: 18px;
+  color: white;
+}
+
+.boton {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  border-radius: 10px;
+}/*# sourceMappingURL=estilo.css.map */
