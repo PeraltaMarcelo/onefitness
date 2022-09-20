@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 * {
   margin: 0;
   padding: 0;
@@ -6,41 +7,108 @@
   box-sizing: border-box;
 }
 
-.navbar-brand img {
+@font-face {
+  font-family: "ViceCitySans";
+  src: url(../fonts/ViceCitySans.otf);
+}
+header .navbar-brand img {
   border-radius: 20px;
   box-shadow: 5px 5px 5px black;
 }
-
-#menu a {
+header #menu a {
   font-size: 15px;
-  color: white;
+  color: #fff;
   font-weight: bold;
 }
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.navbar-toggler {
+header .navbar-toggler {
   border: 2px solid red;
+}
+header .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .row {
   margin-top: 50px;
 }
-
-.row h2 {
-  color: white;
+.row .child h2 {
+  color: #fff;
   letter-spacing: 10px;
   text-align: center;
   margin-bottom: 50px;
 }
-
-.row h3 {
+.row .child h3 {
   line-height: 2;
-  color: white;
+  color: #fff;
   text-align: center;
   margin-bottom: 50px;
+}
+
+body {
+  background-image: url(../assets/imagenes/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+.footer {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 5px;
+  background-color: black;
+  min-height: 100px;
+}
+.footer .redes-sociales a {
+  color: #fff;
+  font-size: 25px;
+  border-radius: 100%;
+  transition: 5s ease;
+  padding: 0 10px;
+}
+.footer .redes-sociales a:hover i {
+  color: rgb(253, 129, 6);
+}
+.footer .direccion p {
+  color: orange;
+  margin: 10px 10px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+section img {
+  border-radius: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  box-shadow: 5px 5px 5px rgba(250, 248, 248, 0.3);
+}
+section .texto {
+  background-color: rgba(250, 6, 6, 0.2);
+  border-radius: 20px;
+  padding: 2px;
+}
+section .texto h3 {
+  color: #fff;
+}
+section .texto h2 {
+  color: #fff;
+}
+section .parrafo {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.actividad h3 {
+  color: #fff;
+  text-align: left;
 }
 
 .formulario {
@@ -53,12 +121,10 @@
   border-radius: 4px;
   box-shadow: 7px 13px 37px #000;
 }
-
-.formulario__contenedor h1 {
+.formulario .formulario__contenedor h1 {
   margin-bottom: 20px;
 }
-
-.formulario__input {
+.formulario .formulario__contenedor .formulario__input {
   width: 100%;
   background: #24303c;
   padding: 10px;
@@ -69,8 +135,7 @@
   font-size: 18px;
   color: white;
 }
-
-.boton {
+.formulario .formulario__contenedor .boton {
   width: 100%;
   background: #1f53c5;
   border: none;
@@ -78,4 +143,47 @@
   color: white;
   margin: 16px 0;
   border-radius: 10px;
+}
+
+.contenedor {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.contenedor .contenedor__mapa {
+  background-color: rgb(182, 173, 173);
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 5px rgba(99, 101, 98, 0.6);
+  transition: all 1s;
+}
+.contenedor .contenedor__mapa h1 {
+  text-align: center;
+  margin: 10px 10px;
+  background-color: gray;
+  border-radius: 10px;
+}
+.contenedor .contenedor__mapa:hover {
+  background-color: orange;
+}
+
+/* media querry */
+@media (max-width: 768px) {
+  .container h2 {
+    color: blueviolet;
+    background-color: gray;
+    padding: 20px;
+  }
+  .actividad h3 {
+    color: aqua;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+@media (max-width: 576px) {
+  .navbar-brand img {
+    display: none;
+  }
 }/*# sourceMappingURL=estilo.css.map */

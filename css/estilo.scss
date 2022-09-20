@@ -1,5 +1,34 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
 @import "./componentes/variables";
-@import "./componentes/reset.scss";
+@import "./componentes/reset";
 @import "./componentes/header";
 @import "./componentes/principal";
+@import "./componentes/body";
+@import "./componentes/footer";
+@import "./componentes/staff";
+@import "./componentes/actividades";
 @import "./componentes/contacto";
+@import "./componentes/ubicacion";
+
+/* media querry */
+
+@media (max-width:768px){
+    .container h2{
+        color: blueviolet;
+        background-color: gray;
+        padding: 20px;
+    }
+    .actividad h3{
+        color:aqua;
+        font-size: 30px;
+        font-weight: bold;   
+    }
+}
+
+@media (max-width:576px){
+    
+    .navbar-brand img{
+        display: none;    
+    }      
+}

@@ -1,0 +1,31 @@
+.contenedor{   
+    padding: 10px;
+    display: flex;
+    justify-content: center;  
+    
+    .contenedor__mapa{
+      background-color: rgb(182, 173, 173);
+      padding: 10px;
+      border-radius: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      box-shadow: 5px 5px 5px rgba(99, 101, 98, 60%); 
+      transition: all 1s; 
+      
+      h1{
+        text-align: center;
+     margin: 10px 10px;
+     background-color:gray ;
+     border-radius: 10px;    
+      }
+
+      &:hover{
+        background-color: orange;
+      }
+   }
+  }
+ 
+
+
+ 
+ 
