@@ -6,17 +6,7 @@
     gap: 5px;
     background-color: black;
     min-height: 100px;
-    .redes-sociales a{
-        color: $textoprincipal;
-        font-size: 25px;
-        border-radius: 100%;    
-        transition: 5s ease;
-        padding: 0 10px;
-        
-        &:hover i {
-            color: rgb(253, 129, 6); 
-        }
-    }
+
     .direccion p{
         color: orange;
         margin: 10px 10px;
@@ -26,8 +16,22 @@
     }    
 }
 
+%iconosredes {
+    color: #fff;
+    font-size: 25px;
+    border-radius: 100%;    
+    transition: 5s ease;
+    padding: 0 10px;
+    
+    
+    &:hover i {
+        color: rgb(253, 129, 6); 
+    }
+}
 
-
+.redes-sociales a {
+    @extend %iconosredes;
+}
 
 
 

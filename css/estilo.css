@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+/* map color texto */
 * {
   margin: 0;
   padding: 0;
@@ -63,16 +64,6 @@ body {
   background-color: black;
   min-height: 100px;
 }
-.footer .redes-sociales a {
-  color: #fff;
-  font-size: 25px;
-  border-radius: 100%;
-  transition: 5s ease;
-  padding: 0 10px;
-}
-.footer .redes-sociales a:hover i {
-  color: rgb(253, 129, 6);
-}
 .footer .direccion p {
   color: orange;
   margin: 10px 10px;
@@ -81,11 +72,22 @@ body {
   margin-bottom: 30px;
 }
 
+.redes-sociales a {
+  color: #fff;
+  font-size: 25px;
+  border-radius: 100%;
+  transition: 5s ease;
+  padding: 0 10px;
+}
+.redes-sociales a:hover i {
+  color: rgb(253, 129, 6);
+}
+
 section img {
   border-radius: 15px;
   margin-bottom: 10px;
   margin-top: 10px;
-  box-shadow: 5px 5px 5px rgba(250, 248, 248, 0.3);
+  box-shadow: 5px 5px 5px rgba(250, 248, 248, 0.3019607843);
 }
 section .texto {
   background-color: rgba(250, 6, 6, 0.2);
@@ -106,9 +108,31 @@ section .parrafo {
   font-size: 18px;
 }
 
-.actividad h3 {
+section img {
+  border-radius: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  box-shadow: 5px 5px 5px rgba(250, 248, 248, 0.3);
+}
+section .text h3 {
+  color: #fca311;
+}
+section .text h2 {
   color: #fff;
-  text-align: left;
+}
+section .parrafo {
+  color: hwb(72 53% 45%);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* mixin para .text */
+.text {
+  background-color: rgba(6, 83, 250, 0.5098039216);
+  border-radius: 20px;
+  padding: 2px;
 }
 
 .formulario {

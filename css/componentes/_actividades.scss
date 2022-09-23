@@ -1,4 +1,36 @@
-.actividad h3{
-    color: $textoprincipal;
-    text-align:left
+section {
+    img{
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px rgba(250, 248, 248, 0.3);
+    }
+
+    .text {            
+           
+        h3 {
+            color: map-get( $colortext , color3 );
+        }
+        h2{
+            color: $textoprincipal;
+        }
+    }
+    .parrafo{
+        color:hwb(72 53% 45%);
+        margin-top: 10px;
+        margin-bottom:10px;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+/* mixin para .text */
+
+@mixin fondotexto( $colorfondo , $borde , $espacio ){
+    background-color: $colorfondo;
+    border-radius: $borde;
+    padding: $espacio; 
+} 
+
+.text{
+    @include fondotexto(#0653fa82 , 20px , 2px);
 }
