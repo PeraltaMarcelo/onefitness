@@ -1,0 +1,37 @@
+.footer{
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;   
+    align-items: center; 
+    gap: 5px;
+    background-color: black;
+    min-height: 100px;
+
+    .direccion p{
+        color: $textoprincipal;
+        margin: 10px 10px;
+        font-size: 15px;        
+        margin-bottom: 30px;
+    }    
+}
+
+%iconosredes {
+    color: #fff;
+    font-size: 25px;
+    border-radius: 100%;    
+    transition: 5s ease;
+    padding: 0 10px;
+    
+    
+    &:hover i { 
+        color: #F77737;
+    }
+}
+
+.redes-sociales a {
+    @extend %iconosredes;
+}
+
+
+
+ 

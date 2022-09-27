@@ -1,0 +1,221 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+/* map color texto */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "vicecity", sans-serif;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "ViceCitySans";
+  src: url(../fonts/ViceCitySans.otf);
+}
+header .navbar-brand img {
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px black;
+}
+header #menu a {
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+header #menu a:hover {
+  color: rgb(253, 129, 6);
+}
+header .navbar-toggler {
+  border: 2px solid red;
+}
+header .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.row {
+  margin-top: 50px;
+}
+.row .child h2 {
+  color: #fff;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.row .child h3 {
+  line-height: 2;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+body {
+  background-image: url(../assets/imagenes/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+.footer {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 5px;
+  background-color: black;
+  min-height: 100px;
+}
+.footer .direccion p {
+  color: #fff;
+  margin: 10px 10px;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.redes-sociales a {
+  color: #fff;
+  font-size: 25px;
+  border-radius: 100%;
+  transition: 5s ease;
+  padding: 0 10px;
+}
+.redes-sociales a:hover i {
+  color: #F77737;
+}
+
+section img {
+  border-radius: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  box-shadow: 5px 5px 5px rgba(250, 248, 248, 0.3019607843);
+}
+section .texto {
+  background-color: rgba(250, 6, 6, 0.2);
+  border-radius: 20px;
+  padding: 2px;
+}
+section .texto h3 {
+  color: #fff;
+  text-align: center;
+}
+section .texto h2 {
+  color: #fff;
+  text-align: center;
+}
+section .parrafo {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.actividades img {
+  border-radius: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  box-shadow: 5px 5px 5px rgba(250, 248, 248, 0.3);
+}
+.actividades .text h3 {
+  color: #fca311;
+  text-align: center;
+}
+.actividades .text h2 {
+  color: #fff;
+  text-align: center;
+}
+.actividades .parrafo {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+
+/* mixin para .text */
+.text {
+  background-color: rgba(6, 83, 250, 0.5098039216);
+  border-radius: 20px;
+  padding: 2px;
+}
+
+/*formulario*/
+.formulario {
+  width: 350px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 4px;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.formulario__contenedor h1 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.formulario__input {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: "calibri";
+  font-size: 18px;
+  color: white;
+}
+
+.boton {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  border-radius: 10px;
+}
+
+.info {
+  margin-top: 50px;
+}
+.info img {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  background-color: hsl(0deg, 1%, 61%);
+  border-radius: 5px;
+}
+.info p {
+  color: #fff;
+  margin-top: 10px;
+}
+.info p a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contenedor {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.contenedor h1 {
+  text-align: center;
+  margin: 10px 10px;
+  background-color: #F77737;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.contenedor iframe {
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #F77737;
+}/*# sourceMappingURL=estilo.css.map */

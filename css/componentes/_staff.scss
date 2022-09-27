@@ -1,0 +1,37 @@
+section {
+    img{
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px #faf8f84d;    
+    }
+
+    .texto {    
+        background-color: rgba(250, 6, 6, 0.2);
+        border-radius: 20px;
+        padding: 2px;
+        
+        h3 {
+            color: $textoprincipal;
+            text-align: center;
+        }
+        h2{
+            color: $textoprincipal;
+            text-align: center;
+        }
+    }
+    .parrafo{
+        color: $textoprincipal;
+        margin-top: 10px;
+        margin-bottom:10px;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
