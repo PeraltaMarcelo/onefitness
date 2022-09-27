@@ -1,3 +1,5 @@
+/*formulario*/
+
 .formulario{
     width: 400px;
     background: #24303c;
@@ -7,12 +9,15 @@
     margin-bottom: 50px;
     border-radius: 4px;
     box-shadow: 7px 13px 37px #000;
+}
         
-    .formulario__contenedor{
-        h1{
+.formulario__contenedor h1{
+        
             margin-bottom: 20px;
+            color: #fff;
         }
-        .formulario__input{
+        
+.formulario__input{
             width: 100%;
             background: #24303c;
             padding: 10px;
@@ -23,19 +28,36 @@
             font-size: 18px;
             color: white;  
         }
-        .boton{
-            width: 100%;
-            background: #1f53c5;
-            border: none;
-            padding: 12px;
-            color: white;
-            margin: 16px 0;
-            border-radius: 10px;   
+.boton{
+        width: 100%;
+        background: #1f53c5;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        border-radius: 10px;   
          }
-    }
- }
-
  
 
+.info{
+    margin-top: 50px;
 
+     img {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+        background-color: hsl(0, 1%, 61%);
+        border-radius: 5px; 
+                
+    }
+    
+    p{
+        color: map-get( $colortext , color1 );        
+        margin-top: 10px;
 
+        a {
+            text-decoration: none;
+            color: map-get( $colortext , color1 );
+        }
+    }    
+}

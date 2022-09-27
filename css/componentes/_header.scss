@@ -9,6 +9,11 @@ header {
     color: $textoprincipal;
     font-weight: bold;
         }
+
+        & #menu a:hover {    
+            color: rgb(253, 129, 6); 
+        }   
+        
     .navbar-toggler {
     border: 2px solid red;
         .navbar-toggler-icon {
@@ -16,3 +21,5 @@ header {
         }
     }
 }
+
+    

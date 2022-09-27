@@ -8,10 +8,9 @@
     min-height: 100px;
 
     .direccion p{
-        color: orange;
+        color: $textoprincipal;
         margin: 10px 10px;
-        font-size: 15px;
-        font-weight: bold;
+        font-size: 15px;        
         margin-bottom: 30px;
     }    
 }
@@ -24,8 +23,8 @@
     padding: 0 10px;
     
     
-    &:hover i {
-        color: rgb(253, 129, 6); 
+    &:hover i { 
+        color: #F77737;
     }
 }
 
@@ -35,3 +34,4 @@
 
 
 
+ 

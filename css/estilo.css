@@ -21,6 +21,9 @@ header #menu a {
   color: #fff;
   font-weight: bold;
 }
+header #menu a:hover {
+  color: rgb(253, 129, 6);
+}
 header .navbar-toggler {
   border: 2px solid red;
 }
@@ -42,6 +45,7 @@ header .navbar-toggler .navbar-toggler-icon {
   color: #fff;
   text-align: center;
   margin-bottom: 50px;
+  font-size: 20px;
 }
 
 body {
@@ -65,10 +69,9 @@ body {
   min-height: 100px;
 }
 .footer .direccion p {
-  color: orange;
+  color: #fff;
   margin: 10px 10px;
   font-size: 15px;
-  font-weight: bold;
   margin-bottom: 30px;
 }
 
@@ -80,7 +83,7 @@ body {
   padding: 0 10px;
 }
 .redes-sociales a:hover i {
-  color: rgb(253, 129, 6);
+  color: #F77737;
 }
 
 section img {
@@ -96,9 +99,11 @@ section .texto {
 }
 section .texto h3 {
   color: #fff;
+  text-align: center;
 }
 section .texto h2 {
   color: #fff;
+  text-align: center;
 }
 section .parrafo {
   color: #fff;
@@ -108,24 +113,28 @@ section .parrafo {
   font-size: 18px;
 }
 
-section img {
+.actividades img {
   border-radius: 15px;
   margin-bottom: 10px;
   margin-top: 10px;
   box-shadow: 5px 5px 5px rgba(250, 248, 248, 0.3);
 }
-section .text h3 {
+.actividades .text h3 {
   color: #fca311;
+  text-align: center;
 }
-section .text h2 {
+.actividades .text h2 {
   color: #fff;
+  text-align: center;
 }
-section .parrafo {
-  color: hwb(72 53% 45%);
+.actividades .parrafo {
+  color: #fff;
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
   font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
 }
 
 /* mixin para .text */
@@ -135,6 +144,7 @@ section .parrafo {
   padding: 2px;
 }
 
+/*formulario*/
 .formulario {
   width: 400px;
   background: #24303c;
@@ -145,10 +155,13 @@ section .parrafo {
   border-radius: 4px;
   box-shadow: 7px 13px 37px #000;
 }
-.formulario .formulario__contenedor h1 {
+
+.formulario__contenedor h1 {
   margin-bottom: 20px;
+  color: #fff;
 }
-.formulario .formulario__contenedor .formulario__input {
+
+.formulario__input {
   width: 100%;
   background: #24303c;
   padding: 10px;
@@ -159,7 +172,8 @@ section .parrafo {
   font-size: 18px;
   color: white;
 }
-.formulario .formulario__contenedor .boton {
+
+.boton {
   width: 100%;
   background: #1f53c5;
   border: none;
@@ -169,28 +183,41 @@ section .parrafo {
   border-radius: 10px;
 }
 
-.contenedor {
+.info {
+  margin-top: 50px;
+}
+.info img {
+  width: 60px;
+  height: 60px;
   padding: 10px;
+  background-color: hsl(0deg, 1%, 61%);
+  border-radius: 5px;
+}
+.info p {
+  color: #fff;
+  margin-top: 10px;
+}
+.info p a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contenedor {
+  padding: 100px;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
-.contenedor .contenedor__mapa {
-  background-color: rgb(182, 173, 173);
-  padding: 10px;
-  border-radius: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  box-shadow: 5px 5px 5px rgba(99, 101, 98, 0.6);
-  transition: all 1s;
-}
-.contenedor .contenedor__mapa h1 {
+.contenedor h1 {
   text-align: center;
   margin: 10px 10px;
   background-color: gray;
   border-radius: 10px;
+  font-size: 20px;
 }
-.contenedor .contenedor__mapa:hover {
-  background-color: orange;
+.contenedor iframe {
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #fff;
 }
 
 /* media querry */
@@ -201,13 +228,8 @@ section .parrafo {
     padding: 20px;
   }
   .actividad h3 {
-    color: aqua;
     font-size: 30px;
     font-weight: bold;
   }
 }
-@media (max-width: 576px) {
-  .navbar-brand img {
-    display: none;
-  }
-}/*# sourceMappingURL=estilo.css.map */
+/*# sourceMappingURL=estilo.css.map */

@@ -1,4 +1,4 @@
-section {
+.actividades {
     img{
     border-radius: 15px;
     margin-bottom: 10px;
@@ -10,17 +10,21 @@ section {
            
         h3 {
             color: map-get( $colortext , color3 );
+            text-align: center;            
         }
         h2{
             color: $textoprincipal;
+            text-align: center;    
         }
     }
     .parrafo{
-        color:hwb(72 53% 45%);
+        color:$textoprincipal;
         margin-top: 10px;
         margin-bottom:10px;
         text-align: center;
         font-size: 18px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 5px;
     }
 }
 /* mixin para .text */

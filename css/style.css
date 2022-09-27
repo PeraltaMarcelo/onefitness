@@ -25,6 +25,8 @@ body{
     grid-template-rows: auto 1fr auto;
 }
 
+
+
 /* estilos navbar */
 .navbar-brand img {
     border-radius: 20px;
