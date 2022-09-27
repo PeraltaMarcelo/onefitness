@@ -146,7 +146,7 @@ section .parrafo {
 
 /*formulario*/
 .formulario {
-  width: 400px;
+  width: 350px;
   background: #24303c;
   padding: 30px;
   margin: auto;
@@ -211,25 +211,11 @@ section .parrafo {
 .contenedor h1 {
   text-align: center;
   margin: 10px 10px;
-  background-color: gray;
+  background-color: #F77737;
   border-radius: 10px;
   font-size: 20px;
 }
 .contenedor iframe {
   border-radius: 5px;
-  box-shadow: 5px 5px 5px #fff;
-}
-
-/* media querry */
-@media (max-width: 768px) {
-  .container h2 {
-    color: blueviolet;
-    background-color: gray;
-    padding: 20px;
-  }
-  .actividad h3 {
-    font-size: 30px;
-    font-weight: bold;
-  }
-}
-/*# sourceMappingURL=estilo.css.map */
+  box-shadow: 5px 5px 5px #F77737;
+}/*# sourceMappingURL=estilo.css.map */

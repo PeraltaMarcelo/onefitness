@@ -11,17 +11,5 @@
 @import "./componentes/contacto";
 @import "./componentes/ubicacion";
 
-/* media querry */
 
-@media (max-width:768px){
-    .container h2{
-        color: blueviolet;
-        background-color: gray;
-        padding: 20px;
-    }
-    .actividad h3{
-        font-size: 30px;
-        font-weight: bold;   
-    }
-}
 
