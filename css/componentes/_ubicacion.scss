@@ -1,26 +1,23 @@
-.contenedor{   
-    padding: 100px;
-    display: flex;
-    justify-content: center;  
-    text-align: center;
-    
-    
-      h1{
-        text-align: center;
-        margin: 10px 10px;
-        background-color:#F77737 ;
-        border-radius: 10px; 
-        font-size: 20px;
 
-          
-      }
+ .mapa {
+    margin-top: 50px;
+    overflow:hidden;
+    padding-bottom:400px;
+    position:relative;
+    height:0;
+    
+    iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+        border-radius: 20px;    
+}
+}
 
-      iframe{
-        border-radius: 5px;
-        box-shadow: 5px 5px 5px #F77737;
-      }
-  }
- 
+
+
 
 
  

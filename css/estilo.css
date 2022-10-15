@@ -39,6 +39,8 @@ header .navbar-toggler .navbar-toggler-icon {
   letter-spacing: 10px;
   text-align: center;
   margin-bottom: 50px;
+  background-color: rgba(89, 87, 84, 0.7);
+  border-radius: 20px;
 }
 .row .child h3 {
   line-height: 2;
@@ -146,7 +148,8 @@ section .parrafo {
 
 /*formulario*/
 .formulario {
-  width: 350px;
+  width: 90%;
+  max-width: 350px;
   background: #24303c;
   padding: 30px;
   margin: auto;
@@ -202,20 +205,18 @@ section .parrafo {
   color: #fff;
 }
 
-.contenedor {
-  padding: 100px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.mapa {
+  margin-top: 50px;
+  overflow: hidden;
+  padding-bottom: 400px;
+  position: relative;
+  height: 0;
 }
-.contenedor h1 {
-  text-align: center;
-  margin: 10px 10px;
-  background-color: #F77737;
-  border-radius: 10px;
-  font-size: 20px;
-}
-.contenedor iframe {
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px #F77737;
+.mapa iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 20px;
 }/*# sourceMappingURL=estilo.css.map */
